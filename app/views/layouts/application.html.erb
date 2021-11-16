@@ -10,8 +10,8 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="d-flex flex-column vh-100">
-    <header class="bg-dark text-white pt-5 pb-4">
+  <body class="d-flex flex-column vh-50">
+    <header class="bg-dark text-white">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a a href="" class="text-white">Bookers</a>
@@ -58,8 +58,12 @@
       </nav>
 
     </header>
-
-
+    <main class="mb-auto">
     <%= yield %>
+    </main>
+    <footer class="white">
+    <p class="col-md-2 mx-auto mt-5">CopyRight Infratop.inc</p>
+    </footer>
+
   </body>
 </html>
